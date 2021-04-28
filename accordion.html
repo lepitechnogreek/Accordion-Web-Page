@@ -1,0 +1,77 @@
+<html>
+    <head><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#pannel1").click(function(){
+                    $("#dropper1").slideToggle().css("display:block;");
+                });
+            });
+            $(document).ready(function(){
+                $("#pannel2").click(function(){
+                    $("#dropper2").slideToggle().css("display","block");
+                });
+            });
+            $(document).ready(function(){
+                $("#pannel3").click(function(){
+                    $("#dropper3").slideToggle().css("display","block");
+                });
+            });
+            $(document).ready(function(){
+                $("#pannel4").click(function(){
+                    $("#dropper4").slideToggle().css("display","block");
+                });
+            });
+            
+        </script>
+        <style>
+            .pannel{
+                width:100%;
+                padding:15px;
+                text-align: Left;
+                background-color:#eee;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                
+            }
+            .pannel:hover{
+                background-color:#ccc;
+                cursor:pointer;
+                transition:0.5s;
+            }
+            .dropper{
+                display:none;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .topic{
+                background-color: #eee;
+                padding:20px;
+                text-align:center;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            p{
+                margin-left:5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="topic"><h1>Frequently Asked Questions</h1></div>
+        <div class="pannel" id="pannel1"><p>When will the Campus Reopen?</p></div>
+        <div class="dropper" id="dropper1"><p>Tentatively, campus should be open by October 2021. Depending on situation of the country, it might get postponed further.</p></div>
+        <div class="pannel" id="pannel2">Will the campus provide vaccination to the students for faster reopening?</div>
+        <div class="dropper" id="dropper2"><p>There is no confirmation about it. Favouring students for vaccination can raise questions and discrepencies among people due to shortage of vaccine.</p></div>
+        <div class="pannel" id="pannel3">How can I become IIT topper?</div>
+        <div class="dropper" id="dropper3"><p>
+            <b>21 IIT Toppers Reveal - Tips for IIT JEE Preparation</b>
+            <ul>
+            <li>Work Hard and be Stress – Free.</li>
+            <li>Work Hard and make a time table and distribute it equally to all subjects.</li>
+            <li>Work Hard and Concentrate During the Subject Preparation.</li>
+            <li>Work Hard and Teachers are the Real Guides.</li>
+            <li>Work Hard and Analyse and Work on Weak Areas.</li>
+            <li>Work Hard and Only Knowledge will help in Future.</li>
+            </ul>
+        </p></div>
+        <div class="pannel" id="pannel4"><p>How many hours do IIT toppers sleep?</p>
+        </div>
+        <div class="dropper" id="dropper4"><p>IIT topper, IIT aspirants and IITians are not allowed to sleep regularly. They get to sleep once every month.</p></div>
+    </body>
+</html>
